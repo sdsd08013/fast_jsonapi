@@ -100,6 +100,16 @@ movie.actor_ids = [1, 2, 3]
 movie.owner_id = 3
 movie.movie_type_id = 1
 movie
+
+movies = 2.times.map do |i|
+           m = Movie.new
+           m.id = i + 1
+           m.name = 'test movie'
+           m.actor_ids = [1, 2, 3]
+           m.owner_id = 3
+           m.movie_type_id = 1
+           m
+         end
 ```
 
 ### Object Serialization
